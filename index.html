@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RunYFood </title>
+    <link rel="icon" href="Logo/onlyLogo.png" type="image/icon type">
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body onload="render()">
+
+    <header>
+
+        <div class="h-start"> <a href="https://sinan-fischer.developerakademie.net/Lieferando/index.html"> <img
+                    src="Logo/logo-modified-removebg-preview.png"> </a> </div>
+        <div class="h-center "> <span class="h-center-span"> Bäckerstaße 18, 12619 Berlin</span> </div>
+        <div class="h-end"><img src="img/DE-flag.png" onclick="testSiteOpen()"> <img src="img/menu.png" class="invert"
+                onclick="testSiteOpen()"> </div>
+
+    </header>
+
+
+
+
+
+    <div class="wrapper">
+
+
+
+
+        <div class="section-3">
+
+            <div class="main-bg"> </div>
+            <div class="s-3-headline">
+                <div class="information"></div>
+                <div class="first-row">
+                    <span>
+                        <h2> GreenFine <br> </h2>
+                    </span>
+                    <div class="information" onclick="testSiteOpen()"> <img src="img/info.png" class="i-icons"><img src="img/white-love.png"
+                            onmouseover="this.src='img/red-love (1).png'" onmouseout="this.src='img/white-love.png'"
+                            class="i-icons" > </div>
+                </div>
+
+                <div class="rating">
+                    <img src="img/five-star.jpg" class="stars">
+                    <a href="#" onclick="testSiteOpen()" > (89 reviews) </a>
+                </div>
+                <div class="costs">
+                    <img src="img/stopwatch.png">
+                    <span>40-80 min</span>
+                    <img src="img/fast-delivery.png" class="costs-m-l">
+                    <span> 2.00€ </span>
+                    <img src="img/min-delivery.png" class="costs-m-l">
+                    <span> Min. 25.00€ </span>
+                </div>
+
+            </div>
+            <div class="search-bar-bg">
+
+                <div class="search-bar">
+                    <img src="img/loupe.png" class="loupe">
+                    <a href="#beliebteGerichte"> Beliebte Gerichte</a>
+                    <a href="#beliebteGerichte"> Knackige Salate</a>
+                    <a href="#beliebteGerichte"> Frische Burger </a>
+                    <a href="#beliebteGerichte"> Selbstgemachte Pizza</a>
+                    <a href="#beliebteGerichte"> Knusprige Beilagen</a>
+                </div>
+            </div>
+            <div class="section-3-content">
+
+
+                <div class="restaurant-logo">
+                    <figure> <img src="img/greenfine.png"> </figure>
+                </div>
+
+
+                <div class="food-categories" id="beliebteGerichte">
+                    <h2 > Beliebte Gerichte </h2>
+                </div>
+                <div id="meals"> </div>
+
+            </div>
+        </div>
+
+        <!-- Basket -->
+
+
+        <aside class="basket" id="basket">
+            <h2  id="close-icon-basket"> Warenkorb <img src="img/close.png" class="close-basket" onclick="basketFullPageClose()">  </h2>
+            <div class="basket-content" id="basket-content">
+                <img src="img/shopping.png">
+                <span> Fülle deinen Warenkorb</span>
+                <span> Dein Warenkorb ist leer </span>
+            </div>
+
+            <span class="const-basket" id="basket-bottom">
+
+            </span>
+        </aside>
+    </div>
+    </div>
+
+    <footer>
+        <div onclick="testSiteOpen()">
+            <a href="#"> Impressum <img src="img/impressum.png"> </a>
+        </div>
+        <div onclick="testSiteOpen()">
+            <a href="#"> Datenschutz <img src="img/datenschutz.png"> </a>
+        </div>
+        <div onclick="linksOpen()">
+            <a href="#"> Verlinkungen <img src="img/klicken.png"> </a>
+        </div>
+
+    </footer>
+
+        <!-- div is for button previw basket -->
+  <div id="total-preview" class="shoppingcart-button"  onclick="basketFullPage()"> </div> 
+
+
+        <!-- div is for id to show pop-up's JavaScript -->
+        <div id="pop-up"> </div>
+        <!-- Links for icons -->
+        <div class="links-bg d-none" id="links-bg" onclick="linksClose()">
+            <div class="links-window" id="links-window">
+                <span> <b>
+                        Hier findest du alle Verlinkungen zu den Icons, von welchen wir Gebrauch gemacht haben.
+                        <br>
+                        Wir möchten uns mit diesem Feld auch bei den Designern bedanken, die uns, diese Icons
+                        kostenlos zur Verfügung stellen und das schöne Design erst möglich machen.
+                        <br>
+                        Ohne euch wäre unsere Website nur halb so schön! Danke! <br> <br>
+                    </b>
+                </span>
+
+                <span>
+                    <a href="https://www.flaticon.com/free-icons/marketplace" title="marketplace icons">Marketplace
+                        icons
+                        created by alkhalifi design - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/germany" title="germany icons">Germany icons created by
+                        Dighital - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Ilham
+                        Fitrotul Hayat - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/instagram-like" title="instagram like icons">Instagram
+                        like
+                        icons created by Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/instagram-like" title="instagram like icons">Instagram
+                        like
+                        icons created by Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/information" title="information icons">Information
+                        icons
+                        created by Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/add-to-cart" title="add to cart icons">Add to cart
+                        icons
+                        created by Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/delivery-van" title="delivery van icons">Delivery van
+                        icons
+                        created by Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/speed" title="speed icons">Speed icons created by
+                        Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/magnifying-glass"
+                        title="magnifying glass icons">Magnifying
+                        glass icons created by Smashicons - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by Smashicons
+                        -
+                        Flaticon</a> <br>
+                    <a href="https://iconscout.com/icons/impressum" target="_blank">Impressum Icon</a> by <a
+                        href="https://iconscout.com/contributors/priyanka-gupta">WEBTECHOPS LLP</a> on <a
+                        href="https://iconscout.com">IconScout</a> <br>
+                    <a href="https://www.flaticon.com/de/kostenlose-icons/datenschutz"
+                        title="datenschutz Icons">Datenschutz
+                        Icons erstellt von Freepik - Flaticon</a> <br>
+                    <a href="https://www.flaticon.com/de/kostenlose-icons/klicken" title="klicken Icons">Klicken Icons
+                        erstellt von Freepik - Flaticon</a> <br>
+                </span>
+
+            </div>
+        </div>
+
+        <!-- Message " only a Test Site"-->
+
+        <div class="test-site d-none" id="test-site" onclick="testSiteClose()">
+            <div class="test-window" id="test-window">
+                <span>
+                    <b>
+                        Diese Seite wurde für Übungszwecke entwickelt.
+                        <br>
+                        Da daher auch keine Nutzung vorgesehen ist, gibt es keine Verlinkung zur gewünschten Seite.
+                        <br>
+                        Wir danken für das Verständnis. <br> <br>
+                    </b>
+                </span>
+
+            </div>
+        </div>
+
+
+</body>
+
+</html>
+
+
+<!-- Icon Verwendungen
+
+Basket : <a href="https://www.flaticon.com/free-icons/marketplace" title="marketplace icons">Marketplace icons created by alkhalifi design - Flaticon</a>
+DE Flag : <a href="https://www.flaticon.com/free-icons/germany" title="germany icons">Germany icons created by Dighital - Flaticon</a>
+burger menu : <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Ilham Fitrotul Hayat - Flaticon</a>
+like : <a href="https://www.flaticon.com/free-icons/instagram-like" title="instagram like icons">Instagram like icons created by Smashicons - Flaticon</a>
+red like <a href="https://www.flaticon.com/free-icons/instagram-like" title="instagram like icons">Instagram like icons created by Smashicons - Flaticon</a>
+information <a href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons">Rabbit icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/add-to-cart" title="add to cart icons">Add to cart icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/delivery-van" title="delivery van icons">Delivery van icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/speed" title="speed icons">Speed icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Magnifying glass icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by Smashicons - Flaticon</a>
+Datenschutz <a href="https://iconscout.com/icons/impressum" target="_blank">Impressum Icon</a> by <a href="https://iconscout.com/contributors/priyanka-gupta">WEBTECHOPS LLP</a> on <a href="https://iconscout.com">IconScout</a>
+Impressum <a href="https://www.flaticon.com/de/kostenlose-icons/datenschutz" title="datenschutz Icons">Datenschutz Icons erstellt von Freepik - Flaticon</a>
+Verlinkung <a href="https://www.flaticon.com/de/kostenlose-icons/klicken" title="klicken Icons">Klicken Icons erstellt von Freepik - Flaticon</a>
+-->
